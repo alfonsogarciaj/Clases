@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes" />
+
+    <!-- Plantilla raíz -->
+    <xsl:template match="/">
+        <xsl:apply-templates select="catalogo/artistas/artista" />
+    </xsl:template>
+
+    <!-- Plantilla  artistas -->
+    <xsl:template match="/catalogo/artistas/artista">
+        <xsl:value-of select="nombre"/>
+    </xsl:template>
+
+</xsl:stylesheet>
