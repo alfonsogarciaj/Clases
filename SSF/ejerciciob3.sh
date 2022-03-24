@@ -1,32 +1,36 @@
 #!/bin/bash
 #
 #
+# NOMBRE: ej13-conjuntos.sh
+# OBJETIVO:
+# AUTOR: alfonso
+# FECHA: 04-02-2022
 #
 #
 ######################################
 
-parametro=$1
+argumento=$1
 info=()
-trap "echo No puedes matarme ingreasa SALIR para salir" SIGKILL
+trap "echo No puedes matarme" SIGKILL
 
-if [ -z "$parametro" ]
+if [ -z "$argumento" ]
 then
-	parametro="CPU"
+	argumento="CPU"
 elif [ "$#" -ne "1" ]
 then
-	parametro="CPU"
-elif [ "$parametro" != "CPU" -a "$parametro" != "MEN" -a "$parametro" != "TIME"  ]
+	argumento="CPU"
+elif [ "$argumento" != "CPU" -a "$argumento" != "MEN" -a "$argumento" != "TIME"  ]
 then
-	parametro="CPU"
+	argumento="CPU"
 fi
 
-if [ "$parametro" == "CPU" ]
+if [ "$argumento" == "CPU" ]
 then
 	columna=3
-elif [ "$parametro" == "MEN" ]
+elif [ "$argumento" == "MEN" ]
 then
 	columna=4
-elif [ "$parametro" == "TIME" ]
+elif [ "$argumento" == "TIME" ]
 then
 	columna=10
 fi
@@ -40,19 +44,17 @@ opcion=1
 
 while [ $opcion -ne 9 ]
 do
-	echo "============================================================================"
-	echo "||                           MENÚ DEL SISTEMA      			||"
-	echo "============================================================================"
-	echo "|| 1) Interrumpir el proceso                                           	||"
-	echo "|| 2) Terminar el proceso                                            	||"
-	echo "|| 3) Matar el proceso                                 	  	 	||"
-	echo "|| 4) Detener el proceso y pasarlo a segundo plano 			||"
-	echo "|| 5) Reanudar el proceso en segundo plano 				||"
-	echo "|| 6) Pasar el proceso a segundo plano                                    ||"
-	echo "|| 7) Asignarle la peor prioridad posible                                 ||"
-	echo "|| 8) Evitar que el proceso muera si se cierra la shell donde se ejecuta. ||"
-	echo "|| 9) Salir								||"
- 	echo "============================================================================"
+
+	echo "1) Parar el proceso                                    	"
+	echo "2) Finalizar el proceso                                  	"
+	echo "3) Matar el proceso                               	  	 "
+	echo "4) Parar el proceso y pasarlo a segundo plano 		"
+	echo "5) Reanudar el proceso en segundo plano 				"
+	echo "6) Pasar el proceso a segundo plano                              "
+	echo "7) Asignarle la menor prioridad posible"
+	echo "8) Evitar que el proceso muera si se cierra la terminal donde se ejecuta"
+	echo "9) Salir"
+ 
 
 read -p "Opción: " opcion
 

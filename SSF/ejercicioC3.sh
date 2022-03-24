@@ -1,11 +1,11 @@
 #!/bin/bash
 
-nomServ=$1
+nommbreServ=$1
 
 if [ $# -eq "0" ]
 then
-	echo "Introduce el parametro"
-	read nomServ
+	echo "Introduce un argumento"
+	read nombreServ
 fi
 
 existe=(`systemctl list-unit-files --type service | grep $nomServ`)
@@ -17,7 +17,7 @@ then
 	echo -e "$(systemctl list-unit-files --type service $nomServ | grep $nomServ | cut -d " " -f 2 )"
 
 else
-	echo "Se ha producido el error, el servicio no existe"
+	echo "Error, no existe el servicio"
 fi
 
 
