@@ -1,5 +1,13 @@
 #!/bin/bash
-
+#
+#
+# NOMBRE: EjercercioC3.sh
+# OBJETIVO:
+# AUTOR: alfonsoGarcía
+# FECHA: 22-03-2022
+#
+#
+######################################
 nommbreServ=$1
 
 if [ $# -eq "0" ]

@@ -1,10 +1,10 @@
 #!/bin/bash
 #
 #
-# NOMBRE: ej13-conjuntos.sh
+# NOMBRE: EjercercioB3.sh
 # OBJETIVO:
-# AUTOR: alfonso
-# FECHA: 04-02-2022
+# AUTOR: alfonsoGarcía
+# FECHA: 22-03-2022
 #
 #
 ######################################
