@@ -1,0 +1,38 @@
+
+    xsd:byte: entero de 8 bits.
+    xsd:short: entero de 16 bits.
+    xsd:int: número entero de 32 bits.
+    xsd:long: entero de 64 bits.
+    xsd:integer: número entero sin límite de capacidad.
+    xsd:unsignedByte: entero de 8 bits sin signo.
+    xsd:unsignedShort: entero de 16 bits sin signo.
+    xsd:unsignedInt: entero de 32 bits sin signo.
+    xsd:unsignedLong: entero de 64 bits sin signo.
+    xsd:string: cadena de caracteres en la que los espacios en blanco se respetan.
+    xsd:normalizedString: cadena de caracteres en la que los espacios en blanco no se respetan y se reemplazarán secuencias largas de espacios o fines de línea por un solo espacio.
+    xsd:date: permite almacenar fechas que deben ir obligatoriamente en formato AAAA-MM-DD (4 digitos para el año, seguidos de un guión, seguido de dos dígitos para el mes, seguidos de un guión, seguidos de dos dígitos para el día del mes)
+    xsd:time: para almacenar horas en formato HH:MM:SS.C
+    xsd:datetime: mezcla la fecha y la hora separando ambos campos con una T mayúscula. Esto permitiría almacenar 2020-10-17T10:40:22.6.
+    xsd:duration. Para indicar períodos. Se debe empezar con P y luego indicar el número de años, meses, días, minutos o segundos. Por ejemplo P1Y4M21DT8H indica un período de 1 año, 4 meses, 21 días y 8 horas. Se aceptan períodos negativos poniendo -P en lugar de P.
+    xsd:boolean: acepta solo valores true y false.
+    xsd:anyURI: acepta URIs.
+    xsd:anyType: es como la clase Object en Java. Será el tipo del cual heredaremos cuando no vayamos a usar ningún tipo especial como tipo padre.
+
+    minInclusive para indicar el menor valor numérico permitido.
+    maxInclusive para indicar el mayor valor numérico permitido.
+    minExclusive para indicar el menor valor numérico que ya no estaría permitido.
+    maxExclusive para indicar el mayor valor numérico que ya no estaría permitido.
+    totalDigits para indicar cuantas posibles cifras se permiten.
+    fractionDigits para indicar cuantas posibles cifras decimales se permiten.
+    length para indicar la longitud exacta de una cadena.
+    minLength para indicar la longitud mínima de una cadena.
+    maxLength para indicar la longitud máxima de una cadena.
+    enumeration para indicar los valores aceptados por una cadena.
+    pattern para indicar la estructura aceptada por una cadena.
+
+    sequence para indicar una secuencia de elementos
+    choice para indicar que se debe elegir un elemento de entre los que aparecen.
+    + : La etiqueta debe aparecer una o más veces (Mínimo una).
+    * : La etiqueta puede aparecer cero, una, o más veces .
+    ? : La etiqueta puede aparecer cero, o una vez, pero no más de una.
+    | : En la etiqueta puede haber uno u otro elemento de los indicados, pero sólo uno de ellos, ejemplo:
