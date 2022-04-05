@@ -12,30 +12,18 @@ public class Operacion {
     public Operacion(){}
 
     /**
-     * Constructor con dos paremetros
-     * @param numero1 Numero 1 de la operacion
-     * @param numero2 Numero 2 de la operacion
+     * Constructor con todos los parametros
+     * @param numero1 n1 de la operacion
+     * @param numero2 n2 de la operacion
+     * @param resutado resultado de la operacion
+     * @param operacion 
      */
-    public Operacion(double numero1, double numero2){
-        
+    public Operacion(double numero1, double numero2, double resutado, char operacion) {
         this.numero1 = numero1;
         this.numero2 = numero2;
-    }
-
-    /**
-     * Constructor con tres parametros
-     * @param numero1 Numero 1 de la operacion
-     * @param numero2 Numero 2 de la operacion
-     * @param operacion Operacion que se ejecuta
-     */
-    public Operacion(double numero1, double numero2, char operacion) {
-        
-        this.numero1 = numero1;
-        this.numero2 = numero2;
+        this.resutado = resutado;
         this.operacion = operacion;
     }
-    
-    
 
     /**
      * Nos devuelve el resultado
@@ -51,4 +39,22 @@ public class Operacion {
         System.out.println(this.numero1+" "+this.operacion+" "+this.numero2+" = "+this.resutado);
         
     }
+
+    public double getNumero1() {
+        return numero1;
+    }
+
+    public double getNumero2() {
+        return numero2;
+    }
+
+    public double getResutado() {
+        return resutado;
+    }
+
+    public char getOperacion() {
+        return operacion;
+    }
+
+
 }
