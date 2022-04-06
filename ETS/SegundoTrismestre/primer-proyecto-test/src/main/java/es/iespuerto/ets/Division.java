@@ -23,12 +23,11 @@ public class Division extends Operacion{
      */
     public double dividir() throws Exception{
 
-        try{
-            this.resutado = this.numero1 / this.numero2;
-            return this.resutado;
-        }catch(Exception e){
+        if (this.numero2 == 0){
             throw new Exception("Se esta realizando una division por cero");
         }
+            this.resutado = this.numero1 / this.numero2;
+            return this.resutado;
     }
     
 

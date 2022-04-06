@@ -17,6 +17,7 @@ public class DivisionTest {
         }
     }
 
+    
     @Test
     public void constructoParametrosTest(){
         division = new Division(1, 2, 0, '/');
@@ -32,11 +33,12 @@ public class DivisionTest {
             assertTrue(e.getMessage().contains("por 0"), "No se ha obtenido el mensaje esperado");
         }
     }
-
+/*
     @Test
     public void divisionPorCero() throws Exception{
 
         division = new Division(1,0,0, '/');
         assertEquals(0.5, division.dividir(), "La operacion no es correcta");
     }
+    */
 }
