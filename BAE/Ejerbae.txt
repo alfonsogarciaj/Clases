@@ -1,0 +1,31 @@
+
+Las imágenes de seguridad muestran que había 2 testigos. 
+El primer testigo vive en la última casa de "Northwestern Dr".
+El segundo testigo, llamado Annabel, vive en algún lugar de "Franklin Ave". 
+
+
+select *
+from person
+where address_street_name='Northwestern Dr';
+order by 
+
+99826	Ivy Kazarian	994470	892	Northwestern Dr	208359813
+
+16371	Annabel Miller	490173	103	Franklin Ave	318771143
+
+
+16371 	Vi el asesinato y reconocí al asesino de mi
+gimnasio cuando estaba entrenando la semana pasada, el 9 de enero
+
+
+
+X0643	20180109	957	1164
+UK1F2	20180109	344	518
+XTE42	20180109	486	1124
+1AE2H	20180109	461	944
+6LSTG	20180109	399	515
+7MWHJ	20180109	273	885
+GE5Q8	20180109	367	959
+48Z7A	20180109	1600	1730
+48Z55	20180109	1530	1700
+90081	20180109	1600	1700
