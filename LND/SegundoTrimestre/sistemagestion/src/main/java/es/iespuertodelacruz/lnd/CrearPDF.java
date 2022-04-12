@@ -39,7 +39,6 @@ public class CrearPDF{
                                 System.out.println("Ponga un nombre al documento");
                                 String nombrePDF = sc.nextLine();
                                 documento.save(nombrePDF + ".pdf");
-
                                 break;
                             case 2:
                                 System.out.println("Has seleccionado la opcion 2");
@@ -83,7 +82,7 @@ public class CrearPDF{
 
     public static PDImageXObject PonerImagen(PDDocument documento, String nombreDeImagen) throws IOException{
         PDImageXObject imagen = PDImageXObject.createFromByteArray(documento,
-                CrearPDF.class.getResourceAsStream("/").readAllBytes(), nombreDeImagen + ".png");
+                CrearPDF.class.getResourceAsStream("/java.png").readAllBytes(), nombreDeImagen);
         return imagen;
     }
 
