@@ -79,7 +79,7 @@ public class CrearPDF {
     public static PDPageContentStream CrearTitulo(PDDocument documento, PDPage page, String titulo) throws IOException {
         PDPageContentStream content = new PDPageContentStream(documento, page);
         content.beginText();
-        content.setFont(PDType1Font.TIMES_BOLD, 32);
+        content.setFont(PDType1Font.HELVETICA, 32);
         content.newLineAtOffset(75, page.getMediaBox().getHeight() - 52);
         content.showText(titulo);
         content.endText();
