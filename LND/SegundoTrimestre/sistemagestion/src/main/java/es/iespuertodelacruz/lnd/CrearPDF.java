@@ -8,6 +8,7 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
+import java.io.*;
 
 public class CrearPDF {
     // **Menu Usuario*/
@@ -18,7 +19,8 @@ public class CrearPDF {
                 System.out.println("1. Crear documento con titulo e imagen");
                 System.out.println("2. Crear documento solo con texto");
                 System.out.println("Escribe una de las opciones");
-                opcion = sc.nextInt();sc.nextLine();
+                opcion = sc.nextInt();
+                sc.nextLine();
                 switch (opcion) {
                     case 1:
                         PDPage page = CrearPagina();
@@ -100,7 +102,7 @@ public class CrearPDF {
         return imagen;
     }
 
-        /**
+    /**
      * Metodo para crear el texto que desea introducir el usuario
      * 
      * @param documento que se le envia al creador de texto
@@ -117,5 +119,56 @@ public class CrearPDF {
         content.showText(titulo);
         content.endText();
         return content;
+    }
+
+    /**
+     * Clase Leer Fichero
+     */
+    public class LeerFichero {
+        public void fichero() {
+            File archivo = null;
+            FileReader fr = null;
+            BufferedReader br = null;
+            try {
+                archivo = new File("C:\\archivo.txt");
+                fr = new FileReader(archivo);
+                br = new BufferedReader(fr);
+                String linea;
+                while ((linea = br.readLine()) != null)
+                    System.out.println(linea);
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    if (null != fr) {
+                        fr.close();
+                    }
+                } catch (Exception e2) {
+                    e2.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public class EscribeFichero {
+        public void main() {
+            FileWriter fichero = null;
+            PrintWriter pw = null;
+            try {
+                fichero = new FileWriter("c:/prueba.txt");
+                pw = new PrintWriter(fichero);
+                for (int i = 0; i < 10; i++)
+                    pw.println("Linea " + i);
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    if (null != fichero)
+                        fichero.close();
+                } catch (Exception e2) {
+                    e2.printStackTrace();
+                }
+            }
+        }
     }
 }

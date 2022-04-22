@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import java.io.File;
+
+
 /**
  * Unit test for simple App.
  */
@@ -23,17 +26,13 @@ class AppTest {
     }
 
     @Test
-    public void CrearPagina(){
-        assertNotNull(crearPDF, "La instancia de crear Page es nula");    
+    public void fichero(){
+
+        /*
+        Object archivo = null;
+        archivo = new File("");
+        */
+        //assertNotNull(archivo, "La instancia de fichero es nula");
     }
 
-    @Test
-    public void CrearTitulo(){
-        assertNotNull(crearPDF, "La instancia de crear titulo es nula");
-    }
-
-    @Test
-    public void PonerImagen(){
-        assertNotNull(crearPDF,"La instancia de poner imagen es nula");
-    }
 }
