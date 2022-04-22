@@ -10,6 +10,9 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import java.io.*;
 
+/*
+*
+*/
 public class CrearPDF {
     // **Menu Usuario*/
     public static void main(String[] args) throws IOException {
@@ -18,6 +21,7 @@ public class CrearPDF {
                 int opcion;
                 System.out.println("1. Crear documento con titulo e imagen");
                 System.out.println("2. Crear documento solo con texto");
+                System.out.println("3. Leer un fichero y escribirlo en un PDF");
                 System.out.println("Escribe una de las opciones");
                 opcion = sc.nextInt();
                 sc.nextLine();
@@ -33,7 +37,7 @@ public class CrearPDF {
                                 "Ahora debe indicar el nombre de la imagen y su formato(Recuerde la imagen debe estar dentro de resources)");
                         String posImagen = sc.nextLine();
                         PDImageXObject ponerImagen = PonerImagen(documento, posImagen);
-                        content.drawImage(ponerImagen, 80, 120, ponerImagen.getWidth() / 3,
+                        content.drawImage(ponerImagen, 80, 110, ponerImagen.getWidth() / 3,
                                 ponerImagen.getHeight() / 3);
                         content.close();
                         System.out.println("Ponga un nombre al documento");
@@ -52,6 +56,17 @@ public class CrearPDF {
                         String nombrePDF2 = sc.nextLine();
                         documento.save(nombrePDF2 + ".pdf");
                         break;
+                    case 3:
+                        PDPage page3 = CrearPagina();
+                        documento.addPage(page3);
+                        System.out.println("Has seleccionado la opcion 3");
+                        System.out.println("Escriba el nombre del fichero");
+                        String nombreFichero = sc.nextLine();
+                        PDPageContentStream content3 = LeerFichero(documento, page3, nombreFichero);
+                        content3.close();
+                        System.out.println("Ponga un nombre al documento");
+                        String nombrePDF3 = sc.nextLine();
+                        documento.save(nombrePDF3 + ".pdf");
                     default:
                         System.out.println("Solo números entre 1 y 3");
                 }
@@ -120,22 +135,32 @@ public class CrearPDF {
         content.endText();
         return content;
     }
-
+    
     /**
-     * Clase Leer Fichero
+     * Metodo para leer un fichero y mostrarlo en un pdf 
+     * 
+     * @param documento que se le envia al usuario creado
+     * @param page pagina creada para el documento
+     * @param nombreFichero nombre del fichero que quiere mostrar en PDF
+     * @return el contenido del fichero que desea mostrar en PDF
+     * @throws IOException
      */
-   // public class LeerFichero {
-        public static Leerfichero() {
+    public static PDPageContentStream LeerFichero(PDDocument documento, PDPage page, String nombreFichero) throws IOException{
+            PDPageContentStream content3 = new PDPageContentStream(documento, page);
+            content3.beginText();
+            content3.setFont(PDType1Font.TIMES_BOLD, 7);
+            content3.newLineAtOffset(15,page.getMediaBox().getHeight() - 32);
             File archivo = null;
             FileReader fr = null;
             BufferedReader br = null;
             try {
-                archivo = new File("C:\\archivo.txt");
+                archivo = new File("/home/daw/Escritorio/Alfonso/Clases/LND/SegundoTrimestre/sistemagestion/src/main/resources/" + nombreFichero);
                 fr = new FileReader(archivo);
                 br = new BufferedReader(fr);
                 String linea;
                 while ((linea = br.readLine()) != null)
-                    System.out.println(linea);
+                    content3.showText(linea);
+                    content3.endText();
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
@@ -146,12 +171,12 @@ public class CrearPDF {
                 } catch (Exception e2) {
                     e2.printStackTrace();
                 }
-                return 0;
             }
-    //    }
-    }
+            return content3;
+        }
 
-    public class EscribeFichero {
+    
+    public class EscribeFichero{
         public void main() {
             FileWriter fichero = null;
             PrintWriter pw = null;

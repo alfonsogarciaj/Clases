@@ -1,0 +1,25 @@
+pl1-
+1-mysql> delimiter //
+mysql> create procedure pa_suma(
+    -> in num1 int,
+    -> in num2 int, 
+    -> out resultado int)
+    -> begin
+    -> set resultado=num1+num2;
+    -> end//
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> delimiter ;
+
+2-
+mysql> delimiter //
+mysql> create procedure pa_reverse(
+    -> in texto varchar(50))
+    -> begin
+    -> select reverse(texto) as 'Resultado';
+    -> end //
+Query OK, 0 rows affected (0,01 sec)
+
+mysql> delimiter ;
+
+
