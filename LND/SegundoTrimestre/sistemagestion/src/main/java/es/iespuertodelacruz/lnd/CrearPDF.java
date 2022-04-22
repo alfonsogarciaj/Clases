@@ -124,8 +124,8 @@ public class CrearPDF {
     /**
      * Clase Leer Fichero
      */
-    public class LeerFichero {
-        public void fichero() {
+   // public class LeerFichero {
+        public static Leerfichero() {
             File archivo = null;
             FileReader fr = null;
             BufferedReader br = null;
@@ -146,8 +146,9 @@ public class CrearPDF {
                 } catch (Exception e2) {
                     e2.printStackTrace();
                 }
+                return 0;
             }
-        }
+    //    }
     }
 
     public class EscribeFichero {
