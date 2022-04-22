@@ -21,8 +21,8 @@ public class CrearPDF {
                 int opcion;
                 System.out.println("1. Crear documento con titulo e imagen");
                 System.out.println("2. Crear documento solo con texto");
-                System.out.println("3. Leer un fichero y escribirlo en un PDF");
-                System.out.println("Escribe una de las opciones");
+                System.out.println("3. Leer un fichero y mostrarlo en un PDF");
+                System.out.println(" Escribe una de las opciones");
                 opcion = sc.nextInt();
                 sc.nextLine();
                 switch (opcion) {
@@ -60,13 +60,14 @@ public class CrearPDF {
                         PDPage page3 = CrearPagina();
                         documento.addPage(page3);
                         System.out.println("Has seleccionado la opcion 3");
-                        System.out.println("Escriba el nombre del fichero");
+                        System.out.println("Escriba el nombre del fichero(Debe estar dentro de resources)");
                         String nombreFichero = sc.nextLine();
                         PDPageContentStream content3 = LeerFichero(documento, page3, nombreFichero);
                         content3.close();
                         System.out.println("Ponga un nombre al documento");
                         String nombrePDF3 = sc.nextLine();
                         documento.save(nombrePDF3 + ".pdf");
+                        break;
                     default:
                         System.out.println("Solo números entre 1 y 3");
                 }
@@ -175,9 +176,10 @@ public class CrearPDF {
             return content3;
         }
 
-    
-    public class EscribeFichero{
-        public void main() {
+        /**
+         * Metodo futuro para escribir un fichero
+         */
+        public void EscribirFichero() {
             FileWriter fichero = null;
             PrintWriter pw = null;
             try {
@@ -197,4 +199,4 @@ public class CrearPDF {
             }
         }
     }
-}
+
