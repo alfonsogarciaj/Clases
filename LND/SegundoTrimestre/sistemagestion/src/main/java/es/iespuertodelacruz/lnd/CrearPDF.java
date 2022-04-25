@@ -158,22 +158,10 @@ public class CrearPDF {
                 archivo = new File("/home/daw/Escritorio/Alfonso/Clases/LND/SegundoTrimestre/sistemagestion/src/main/resources/" + nombreFichero);
                 fr = new FileReader(archivo);
                 br = new BufferedReader(fr);
-                String linea = br.readLine();
-            
+                String linea;
                 while ((linea = br.readLine()) != null)
                     content3.showText(linea);
                     content3.endText();
-            
-                /*
-                while (linea != null){
-                    linea = br.readLine();
-                    content3.showText(linea);
-                    if(linea != null){
-                        content3.showText(linea);
-                        content3.endText();
-                    }
-                    */
-                
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
