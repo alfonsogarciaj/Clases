@@ -1,5 +1,7 @@
 package es.iespuertodelacruz.lnd;
 
+import java.util.Scanner;
+
 public class Rss {
 
     public static String etiquetaXML() {
@@ -65,21 +67,10 @@ public class Rss {
         System.out.println(
                 crearRss(
                         "channel",
-                        "tittle", "Prueba",
-                        "link", "https://github.com/Yared70",
-                        "description", "Prueba de descripcion"));
+                        "tittle", "Prueba RSS",
+                        "link", "https://github.com/alfonsogj14",
+                        "description", "Deberia aparecer el RSS"));
 
     }
 
 }
-
-/*
- * <?xml version="1.0"?>
- * <rss version="2.0">
- * <channel>
- * <title>Prueba</title>
- * <link>https://github.com/usuario</link>
- * <description>Prueba de descripcion</description>
- * </channel>
- * </rss>
- */
