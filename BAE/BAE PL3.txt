@@ -1,0 +1,15 @@
+mysql> delimiter //
+mysql> create procedure p_sumar5T( in v1 int, in v2 int, in v3 int, in v4 int, in v5 int, out resultado int) begin set resultado=v1+v2+v3+v4+v5; select @resultado; end//
+
+create function sololetra(texto varchar(30)) returns varchar(30) deterministic
+begin
+return regexp_replace(texto , "[^a-zA-Z]", " ");
+end // 
+
+2. mysql> create function sololetra(texto varchar(30)) returns varchar(30) deterministic
+    -> begin
+    -> return regexp_replace(texto , "[^a-zA-Z]", " ");
+    -> end // 
+
+3.
+
