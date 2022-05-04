@@ -12,4 +12,80 @@ end //
     -> end // 
 
 3.
+ delimiter $$
+create procedure p_pesetas(valor decimal(5,2))
+begin
+     declare unaP, cincoP, diezP, veintecincoP, cincuentaP, cienP, doscienP, quinientoP, millP, dosmillP, cincomillP integer;
+     set unaP = 0;
+     set cincoP = 0;
+     set diezP = 0;
+     set veintecincoP = 0;
+     set cincuentaP = 0;
+     set cienP = 0;
+     set doscienP = 0;
+     set quinientoP = 0;
+     set millP = 0;
+     set dosmillP = 0;
+     set cincomillP = 0;
+
+     if valor >= 5000 then
+         set cincomillP = valor / 5000;
+         set valor = MOD(valor,5000);
+     end if;
+
+     if valor >= 2000 then
+         set dosmillP = valor / 2000;
+         set valor = MOD(valor,2000);
+     end if;
+
+     if valor >= 1000 then
+         set millP = valor / 1000;
+         set valor = MOD(valor,1000);
+     end if;
+
+     if valor >= 500 then
+         set quinientoP = valor / 500;
+         set valor = MOD(valor,500);
+     end if;
+    
+     if valor >= 200 then
+         set doscienP = valor / 200;
+         set valor = MOD(valor,200);
+     end if;
+
+     if valor >= 100 then
+         set cienP = valor / 100;
+         set valor = MOD(valor,100);
+     end if;
+
+     if valor >= 50 then
+         set cincuentaP = valor / 50;
+         set valor = MOD(valor,50);
+     end if;
+
+     if valor >= 25 then
+         set veintecincoP = valor / 25;
+         set valor = MOD(valor,25);
+     end if;
+
+     if valor >= 10 then
+         set diezP = valor / 10;
+         set valor = MOD(valor,10);
+     end if;
+
+     if valor >= 5 then
+         set cincoP = valor / 5;
+         set valor = MOD(valor,5);
+     end if;
+
+     if valor >= 1 then
+         set unaP = valor / 1;
+         set valor = MOD(valor,1);
+     end if;
+
+ 
+     select unaP, cincoP, diezP, veintecincoP, cincuentaP, cienP, doscienP, quinientoP, millP, dosmillP, cincomillP;
+end $$
+
+delimiter ;
 
