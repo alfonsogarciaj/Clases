@@ -4,9 +4,6 @@
 
     <xsl:template match="/">
         <hmtl>
-            <head>
-                <title>New Version!</title>
-            </head>
             <body>
                 <ul>
                     <xsl:apply-templates select="diccionarios" />
