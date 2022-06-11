@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd" >
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PharmaGuardia</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <p class="logo">
+            <div class="img-container">
+                <img src="css/icono_nombre.png">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <a href="index.html">Página Principal</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="identificar.html">Identificación</a>
+                    <a href="registrar.html">Registrar</a>
+                </ul>
+            </div>
+            </p>
+        </div>
+
+        <div id="content-buscadores">
+            <div class="container">
+                <h1><span style="color: turquoise">Formas </span><span style="color:white">de</span><span style="color:#ff54c6"> Búsquedad</span></h1>
+
+                <div class="buscadores">
+                    <div class="buscador">
+                        <h3>Buscar por C.P.</h3>
+                        <input type="text" name="cp" placeholder="Ingresa el C.P.">
+                        <br>
+                        <form action="https://www.google.es/maps/search/Farmacias/@28.3995713,-16.5210213,14z/data=!3m1!4b1?hl=es">
+                            <button>Buscar</button>
+                        </form>                   
+                     </div>
+                    <div class="buscador">
+                        <h3>Buscar por Geolocalización</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d56161.84112927163!2d-16.618360148923127!3d28.385592223924295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFarmacias!5e0!3m2!1ses!2ses!4v1653073774814!5m2!1ses!2ses" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <br>
+                        <form action="https://www.google.es/maps/search/Farmacias/@28.3995713,-16.5210213,14z/data=!3m1!4b1?hl=es">
+                            <button>Buscar</button>
+                        </form>    
+                    </div>
+                    <div class="buscador">
+                        <h3>Buscar por Listado</h3>
+                        <select name="ingrediente" id="ingrediente">
+                            <optgroup label="Farmacia">
+                                <option value="Farmacia">Farmacia</option>
+                               <option value="FarmaciaSantaClara">Farmacia Santa Clara</option>
+                               <option value="FarmaciaPlazaElCharco">Farmacia Plaza El Charco</option>
+                               <option value="FarmaciaCaminoElVino">Farmacia Camino El Vino</option>
+                            </optgroup>
+                          </select>
+                          <br>
+                          <form action="https://www.google.es/maps/search/Farmacias/@28.3995713,-16.5210213,14z/data=!3m1!4b1?hl=es">
+                            <button>Buscar</button>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="footer">
+        <div class="container">
+            <p>&copy; AlfonsoGarcía</p>
+        </div>
+    </div>
+</body>
+
+</html>
