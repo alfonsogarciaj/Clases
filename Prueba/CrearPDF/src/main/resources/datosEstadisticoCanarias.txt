@@ -1,0 +1,364 @@
+Sexo;Total Nacional;Comunidades y Ciudades Autónomas;Provincias;Nacionalidad;Total
+Ambos sexos;Total Nacional;05 Canarias;;Total Extranjeros;287.458
+Ambos sexos;Total Nacional;05 Canarias;;Alemania;25.286
+Ambos sexos;Total Nacional;05 Canarias;;Austria;1.709
+Ambos sexos;Total Nacional;05 Canarias;;Bélgica;4.360
+Ambos sexos;Total Nacional;05 Canarias;;Bulgaria;2.643
+Ambos sexos;Total Nacional;05 Canarias;;Chipre;21
+Ambos sexos;Total Nacional;05 Canarias;;Croacia;377
+Ambos sexos;Total Nacional;05 Canarias;;Dinamarca;692
+Ambos sexos;Total Nacional;05 Canarias;;Eslovenia;507
+Ambos sexos;Total Nacional;05 Canarias;;Estonia;622
+Ambos sexos;Total Nacional;05 Canarias;;Finlandia;1.044
+Ambos sexos;Total Nacional;05 Canarias;;Francia;6.597
+Ambos sexos;Total Nacional;05 Canarias;;Grecia;304
+Ambos sexos;Total Nacional;05 Canarias;;Hungría;2.355
+Ambos sexos;Total Nacional;05 Canarias;;Irlanda;2.457
+Ambos sexos;Total Nacional;05 Canarias;;Italia;49.879
+Ambos sexos;Total Nacional;05 Canarias;;Letonia;1.085
+Ambos sexos;Total Nacional;05 Canarias;;Lituania;1.501
+Ambos sexos;Total Nacional;05 Canarias;;Luxemburgo;120
+Ambos sexos;Total Nacional;05 Canarias;;Malta;26
+Ambos sexos;Total Nacional;05 Canarias;;Países Bajos;3.306
+Ambos sexos;Total Nacional;05 Canarias;;Polonia;5.016
+Ambos sexos;Total Nacional;05 Canarias;;Portugal;4.762
+Ambos sexos;Total Nacional;05 Canarias;;República Checa;1.472
+Ambos sexos;Total Nacional;05 Canarias;;República Eslovaca;1.099
+Ambos sexos;Total Nacional;05 Canarias;;Rumanía;7.979
+Ambos sexos;Total Nacional;05 Canarias;;Suecia;1.947
+Ambos sexos;Total Nacional;05 Canarias;;Albania;133
+Ambos sexos;Total Nacional;05 Canarias;;Andorra;6
+Ambos sexos;Total Nacional;05 Canarias;;Armenia;55
+Ambos sexos;Total Nacional;05 Canarias;;Belarús;358
+Ambos sexos;Total Nacional;05 Canarias;;Bosnia y Herzegovina;76
+Ambos sexos;Total Nacional;05 Canarias;;Georgia;114
+Ambos sexos;Total Nacional;05 Canarias;;Islandia;237
+Ambos sexos;Total Nacional;05 Canarias;;Liechtenstein;8
+Ambos sexos;Total Nacional;05 Canarias;;Macedonia;39
+Ambos sexos;Total Nacional;05 Canarias;;Moldavia;286
+Ambos sexos;Total Nacional;05 Canarias;;Noruega;1.551
+Ambos sexos;Total Nacional;05 Canarias;;Reino Unido;29.582
+Ambos sexos;Total Nacional;05 Canarias;;Rusia;4.306
+Ambos sexos;Total Nacional;05 Canarias;;Serbia;290
+Ambos sexos;Total Nacional;05 Canarias;;Suiza;1.793
+Ambos sexos;Total Nacional;05 Canarias;;Turquía;94
+Ambos sexos;Total Nacional;05 Canarias;;Ucrania;1.394
+Ambos sexos;Total Nacional;05 Canarias;;Resto de Nacionalidades Europeas;37
+Ambos sexos;Total Nacional;05 Canarias;;Angola;30
+Ambos sexos;Total Nacional;05 Canarias;;Argelia;425
+Ambos sexos;Total Nacional;05 Canarias;;Benin;9
+Ambos sexos;Total Nacional;05 Canarias;;Burkina Faso;12
+Ambos sexos;Total Nacional;05 Canarias;;Cabo Verde;226
+Ambos sexos;Total Nacional;05 Canarias;;Camerún;66
+Ambos sexos;Total Nacional;05 Canarias;;Congo;27
+Ambos sexos;Total Nacional;05 Canarias;;Costa de Marfil;181
+Ambos sexos;Total Nacional;05 Canarias;;Egipto;57
+Ambos sexos;Total Nacional;05 Canarias;;Etiopía;7
+Ambos sexos;Total Nacional;05 Canarias;;Gambia;220
+Ambos sexos;Total Nacional;05 Canarias;;Ghana;427
+Ambos sexos;Total Nacional;05 Canarias;;Guinea;495
+Ambos sexos;Total Nacional;05 Canarias;;Guinea Ecuatorial;276
+Ambos sexos;Total Nacional;05 Canarias;;Guinea-Bissau;381
+Ambos sexos;Total Nacional;05 Canarias;;Kenia;45
+Ambos sexos;Total Nacional;05 Canarias;;Liberia;24
+Ambos sexos;Total Nacional;05 Canarias;;Mali;637
+Ambos sexos;Total Nacional;05 Canarias;;Marruecos;18.345
+Ambos sexos;Total Nacional;05 Canarias;;Mauritania;2.614
+Ambos sexos;Total Nacional;05 Canarias;;Nigeria;1.284
+Ambos sexos;Total Nacional;05 Canarias;;República Democrática del Congo;8
+Ambos sexos;Total Nacional;05 Canarias;;Senegal;3.626
+Ambos sexos;Total Nacional;05 Canarias;;Sierra Leona;165
+Ambos sexos;Total Nacional;05 Canarias;;Sudáfrica;95
+Ambos sexos;Total Nacional;05 Canarias;;Togo;22
+Ambos sexos;Total Nacional;05 Canarias;;Túnez;63
+Ambos sexos;Total Nacional;05 Canarias;;Resto de África;99
+Ambos sexos;Total Nacional;05 Canarias;;Costa Rica;67
+Ambos sexos;Total Nacional;05 Canarias;;Cuba;13.852
+Ambos sexos;Total Nacional;05 Canarias;;Dominica;12
+Ambos sexos;Total Nacional;05 Canarias;;El Salvador;85
+Ambos sexos;Total Nacional;05 Canarias;;Guatemala;164
+Ambos sexos;Total Nacional;05 Canarias;;Honduras;1.382
+Ambos sexos;Total Nacional;05 Canarias;;Nicaragua;148
+Ambos sexos;Total Nacional;05 Canarias;;Panamá;100
+Ambos sexos;Total Nacional;05 Canarias;;República Dominicana;1.510
+Ambos sexos;Total Nacional;05 Canarias;;Resto de América Central y Caribe;40
+Ambos sexos;Total Nacional;05 Canarias;;Canadá;217
+Ambos sexos;Total Nacional;05 Canarias;;Estados Unidos de América;1.110
+Ambos sexos;Total Nacional;05 Canarias;;México;634
+Ambos sexos;Total Nacional;05 Canarias;;Argentina;4.546
+Ambos sexos;Total Nacional;05 Canarias;;Bolivia;1.099
+Ambos sexos;Total Nacional;05 Canarias;;Brasil;2.164
+Ambos sexos;Total Nacional;05 Canarias;;Chile;1.307
+Ambos sexos;Total Nacional;05 Canarias;;Colombia;16.557
+Ambos sexos;Total Nacional;05 Canarias;;Ecuador;1.551
+Ambos sexos;Total Nacional;05 Canarias;;Paraguay;1.321
+Ambos sexos;Total Nacional;05 Canarias;;Perú;1.551
+Ambos sexos;Total Nacional;05 Canarias;;Uruguay;2.607
+Ambos sexos;Total Nacional;05 Canarias;;Venezuela;19.033
+Ambos sexos;Total Nacional;05 Canarias;;Resto de América del Sur;1
+Ambos sexos;Total Nacional;05 Canarias;;Arabia Saudí;9
+Ambos sexos;Total Nacional;05 Canarias;;Bangladesh;580
+Ambos sexos;Total Nacional;05 Canarias;;China;10.426
+Ambos sexos;Total Nacional;05 Canarias;;Corea;257
+Ambos sexos;Total Nacional;05 Canarias;;Filipinas;1.834
+Ambos sexos;Total Nacional;05 Canarias;;India;3.515
+Ambos sexos;Total Nacional;05 Canarias;;Indonesia;87
+Ambos sexos;Total Nacional;05 Canarias;;Irán;113
+Ambos sexos;Total Nacional;05 Canarias;;Iraq;17
+Ambos sexos;Total Nacional;05 Canarias;;Israel;61
+Ambos sexos;Total Nacional;05 Canarias;;Japón;162
+Ambos sexos;Total Nacional;05 Canarias;;Jordania;50
+Ambos sexos;Total Nacional;05 Canarias;;Kazajstán;151
+Ambos sexos;Total Nacional;05 Canarias;;Líbano;111
+Ambos sexos;Total Nacional;05 Canarias;;Nepal;321
+Ambos sexos;Total Nacional;05 Canarias;;Pakistán;556
+Ambos sexos;Total Nacional;05 Canarias;;Siria;50
+Ambos sexos;Total Nacional;05 Canarias;;Tailandia;200
+Ambos sexos;Total Nacional;05 Canarias;;Vietnam;69
+Ambos sexos;Total Nacional;05 Canarias;;Resto de Asia;246
+Ambos sexos;Total Nacional;05 Canarias;;Australia;97
+Ambos sexos;Total Nacional;05 Canarias;;Nueva Zelanda;19
+Ambos sexos;Total Nacional;05 Canarias;;Resto de Oceanía;3
+Ambos sexos;Total Nacional;05 Canarias;;Apátridas;75
+Hombres;Total Nacional;05 Canarias;;Total Extranjeros;142.137
+Hombres;Total Nacional;05 Canarias;;Alemania;11.680
+Hombres;Total Nacional;05 Canarias;;Austria;811
+Hombres;Total Nacional;05 Canarias;;Bélgica;2.197
+Hombres;Total Nacional;05 Canarias;;Bulgaria;1.241
+Hombres;Total Nacional;05 Canarias;;Chipre;11
+Hombres;Total Nacional;05 Canarias;;Croacia;175
+Hombres;Total Nacional;05 Canarias;;Dinamarca;359
+Hombres;Total Nacional;05 Canarias;;Eslovenia;220
+Hombres;Total Nacional;05 Canarias;;Estonia;265
+Hombres;Total Nacional;05 Canarias;;Finlandia;389
+Hombres;Total Nacional;05 Canarias;;Francia;3.241
+Hombres;Total Nacional;05 Canarias;;Grecia;156
+Hombres;Total Nacional;05 Canarias;;Hungría;1.076
+Hombres;Total Nacional;05 Canarias;;Irlanda;1.233
+Hombres;Total Nacional;05 Canarias;;Italia;27.142
+Hombres;Total Nacional;05 Canarias;;Letonia;466
+Hombres;Total Nacional;05 Canarias;;Lituania;642
+Hombres;Total Nacional;05 Canarias;;Luxemburgo;68
+Hombres;Total Nacional;05 Canarias;;Malta;14
+Hombres;Total Nacional;05 Canarias;;Países Bajos;1.590
+Hombres;Total Nacional;05 Canarias;;Polonia;2.101
+Hombres;Total Nacional;05 Canarias;;Portugal;2.470
+Hombres;Total Nacional;05 Canarias;;República Checa;556
+Hombres;Total Nacional;05 Canarias;;República Eslovaca;423
+Hombres;Total Nacional;05 Canarias;;Rumanía;3.711
+Hombres;Total Nacional;05 Canarias;;Suecia;857
+Hombres;Total Nacional;05 Canarias;;Albania;68
+Hombres;Total Nacional;05 Canarias;;Andorra;2
+Hombres;Total Nacional;05 Canarias;;Armenia;26
+Hombres;Total Nacional;05 Canarias;;Belarús;134
+Hombres;Total Nacional;05 Canarias;;Bosnia y Herzegovina;43
+Hombres;Total Nacional;05 Canarias;;Georgia;65
+Hombres;Total Nacional;05 Canarias;;Islandia;120
+Hombres;Total Nacional;05 Canarias;;Liechtenstein;5
+Hombres;Total Nacional;05 Canarias;;Macedonia;17
+Hombres;Total Nacional;05 Canarias;;Moldavia;133
+Hombres;Total Nacional;05 Canarias;;Noruega;715
+Hombres;Total Nacional;05 Canarias;;Reino Unido;14.764
+Hombres;Total Nacional;05 Canarias;;Rusia;1.622
+Hombres;Total Nacional;05 Canarias;;Serbia;161
+Hombres;Total Nacional;05 Canarias;;Suiza;825
+Hombres;Total Nacional;05 Canarias;;Turquía;61
+Hombres;Total Nacional;05 Canarias;;Ucrania;549
+Hombres;Total Nacional;05 Canarias;;Resto de Nacionalidades Europeas;22
+Hombres;Total Nacional;05 Canarias;;Angola;19
+Hombres;Total Nacional;05 Canarias;;Argelia;259
+Hombres;Total Nacional;05 Canarias;;Benin;2
+Hombres;Total Nacional;05 Canarias;;Burkina Faso;8
+Hombres;Total Nacional;05 Canarias;;Cabo Verde;85
+Hombres;Total Nacional;05 Canarias;;Camerún;33
+Hombres;Total Nacional;05 Canarias;;Congo;14
+Hombres;Total Nacional;05 Canarias;;Costa de Marfil;82
+Hombres;Total Nacional;05 Canarias;;Egipto;48
+Hombres;Total Nacional;05 Canarias;;Etiopía;2
+Hombres;Total Nacional;05 Canarias;;Gambia;180
+Hombres;Total Nacional;05 Canarias;;Ghana;302
+Hombres;Total Nacional;05 Canarias;;Guinea;308
+Hombres;Total Nacional;05 Canarias;;Guinea Ecuatorial;91
+Hombres;Total Nacional;05 Canarias;;Guinea-Bissau;267
+Hombres;Total Nacional;05 Canarias;;Kenia;23
+Hombres;Total Nacional;05 Canarias;;Liberia;18
+Hombres;Total Nacional;05 Canarias;;Mali;560
+Hombres;Total Nacional;05 Canarias;;Marruecos;11.212
+Hombres;Total Nacional;05 Canarias;;Mauritania;1.575
+Hombres;Total Nacional;05 Canarias;;Nigeria;706
+Hombres;Total Nacional;05 Canarias;;República Democrática del Congo;4
+Hombres;Total Nacional;05 Canarias;;Senegal;2.457
+Hombres;Total Nacional;05 Canarias;;Sierra Leona;112
+Hombres;Total Nacional;05 Canarias;;Sudáfrica;60
+Hombres;Total Nacional;05 Canarias;;Togo;14
+Hombres;Total Nacional;05 Canarias;;Túnez;44
+Hombres;Total Nacional;05 Canarias;;Resto de África;49
+Hombres;Total Nacional;05 Canarias;;Costa Rica;33
+Hombres;Total Nacional;05 Canarias;;Cuba;6.645
+Hombres;Total Nacional;05 Canarias;;Dominica;4
+Hombres;Total Nacional;05 Canarias;;El Salvador;34
+Hombres;Total Nacional;05 Canarias;;Guatemala;49
+Hombres;Total Nacional;05 Canarias;;Honduras;379
+Hombres;Total Nacional;05 Canarias;;Nicaragua;37
+Hombres;Total Nacional;05 Canarias;;Panamá;37
+Hombres;Total Nacional;05 Canarias;;República Dominicana;751
+Hombres;Total Nacional;05 Canarias;;Resto de América Central y Caribe;22
+Hombres;Total Nacional;05 Canarias;;Canadá;104
+Hombres;Total Nacional;05 Canarias;;Estados Unidos de América;535
+Hombres;Total Nacional;05 Canarias;;México;240
+Hombres;Total Nacional;05 Canarias;;Argentina;2.223
+Hombres;Total Nacional;05 Canarias;;Bolivia;515
+Hombres;Total Nacional;05 Canarias;;Brasil;735
+Hombres;Total Nacional;05 Canarias;;Chile;644
+Hombres;Total Nacional;05 Canarias;;Colombia;7.420
+Hombres;Total Nacional;05 Canarias;;Ecuador;875
+Hombres;Total Nacional;05 Canarias;;Paraguay;387
+Hombres;Total Nacional;05 Canarias;;Perú;688
+Hombres;Total Nacional;05 Canarias;;Uruguay;1.279
+Hombres;Total Nacional;05 Canarias;;Venezuela;7.836
+Hombres;Total Nacional;05 Canarias;;Resto de América del Sur;0
+Hombres;Total Nacional;05 Canarias;;Arabia Saudí;6
+Hombres;Total Nacional;05 Canarias;;Bangladesh;385
+Hombres;Total Nacional;05 Canarias;;China;5.308
+Hombres;Total Nacional;05 Canarias;;Corea;115
+Hombres;Total Nacional;05 Canarias;;Filipinas;775
+Hombres;Total Nacional;05 Canarias;;India;1.900
+Hombres;Total Nacional;05 Canarias;;Indonesia;36
+Hombres;Total Nacional;05 Canarias;;Irán;63
+Hombres;Total Nacional;05 Canarias;;Iraq;11
+Hombres;Total Nacional;05 Canarias;;Israel;27
+Hombres;Total Nacional;05 Canarias;;Japón;61
+Hombres;Total Nacional;05 Canarias;;Jordania;25
+Hombres;Total Nacional;05 Canarias;;Kazajstán;60
+Hombres;Total Nacional;05 Canarias;;Líbano;69
+Hombres;Total Nacional;05 Canarias;;Nepal;176
+Hombres;Total Nacional;05 Canarias;;Pakistán;356
+Hombres;Total Nacional;05 Canarias;;Siria;28
+Hombres;Total Nacional;05 Canarias;;Tailandia;28
+Hombres;Total Nacional;05 Canarias;;Vietnam;36
+Hombres;Total Nacional;05 Canarias;;Resto de Asia;118
+Hombres;Total Nacional;05 Canarias;;Australia;54
+Hombres;Total Nacional;05 Canarias;;Nueva Zelanda;11
+Hombres;Total Nacional;05 Canarias;;Resto de Oceanía;1
+Hombres;Total Nacional;05 Canarias;;Apátridas;56
+Mujeres;Total Nacional;05 Canarias;;Total Extranjeros;145.321
+Mujeres;Total Nacional;05 Canarias;;Alemania;13.606
+Mujeres;Total Nacional;05 Canarias;;Austria;898
+Mujeres;Total Nacional;05 Canarias;;Bélgica;2.163
+Mujeres;Total Nacional;05 Canarias;;Bulgaria;1.402
+Mujeres;Total Nacional;05 Canarias;;Chipre;10
+Mujeres;Total Nacional;05 Canarias;;Croacia;202
+Mujeres;Total Nacional;05 Canarias;;Dinamarca;333
+Mujeres;Total Nacional;05 Canarias;;Eslovenia;287
+Mujeres;Total Nacional;05 Canarias;;Estonia;357
+Mujeres;Total Nacional;05 Canarias;;Finlandia;655
+Mujeres;Total Nacional;05 Canarias;;Francia;3.356
+Mujeres;Total Nacional;05 Canarias;;Grecia;148
+Mujeres;Total Nacional;05 Canarias;;Hungría;1.279
+Mujeres;Total Nacional;05 Canarias;;Irlanda;1.224
+Mujeres;Total Nacional;05 Canarias;;Italia;22.737
+Mujeres;Total Nacional;05 Canarias;;Letonia;619
+Mujeres;Total Nacional;05 Canarias;;Lituania;859
+Mujeres;Total Nacional;05 Canarias;;Luxemburgo;52
+Mujeres;Total Nacional;05 Canarias;;Malta;12
+Mujeres;Total Nacional;05 Canarias;;Países Bajos;1.716
+Mujeres;Total Nacional;05 Canarias;;Polonia;2.915
+Mujeres;Total Nacional;05 Canarias;;Portugal;2.292
+Mujeres;Total Nacional;05 Canarias;;República Checa;916
+Mujeres;Total Nacional;05 Canarias;;República Eslovaca;676
+Mujeres;Total Nacional;05 Canarias;;Rumanía;4.268
+Mujeres;Total Nacional;05 Canarias;;Suecia;1.090
+Mujeres;Total Nacional;05 Canarias;;Albania;65
+Mujeres;Total Nacional;05 Canarias;;Andorra;4
+Mujeres;Total Nacional;05 Canarias;;Armenia;29
+Mujeres;Total Nacional;05 Canarias;;Belarús;224
+Mujeres;Total Nacional;05 Canarias;;Bosnia y Herzegovina;33
+Mujeres;Total Nacional;05 Canarias;;Georgia;49
+Mujeres;Total Nacional;05 Canarias;;Islandia;117
+Mujeres;Total Nacional;05 Canarias;;Liechtenstein;3
+Mujeres;Total Nacional;05 Canarias;;Macedonia;22
+Mujeres;Total Nacional;05 Canarias;;Moldavia;153
+Mujeres;Total Nacional;05 Canarias;;Noruega;836
+Mujeres;Total Nacional;05 Canarias;;Reino Unido;14.818
+Mujeres;Total Nacional;05 Canarias;;Rusia;2.684
+Mujeres;Total Nacional;05 Canarias;;Serbia;129
+Mujeres;Total Nacional;05 Canarias;;Suiza;968
+Mujeres;Total Nacional;05 Canarias;;Turquía;33
+Mujeres;Total Nacional;05 Canarias;;Ucrania;845
+Mujeres;Total Nacional;05 Canarias;;Resto de Nacionalidades Europeas;15
+Mujeres;Total Nacional;05 Canarias;;Angola;11
+Mujeres;Total Nacional;05 Canarias;;Argelia;166
+Mujeres;Total Nacional;05 Canarias;;Benin;7
+Mujeres;Total Nacional;05 Canarias;;Burkina Faso;4
+Mujeres;Total Nacional;05 Canarias;;Cabo Verde;141
+Mujeres;Total Nacional;05 Canarias;;Camerún;33
+Mujeres;Total Nacional;05 Canarias;;Congo;13
+Mujeres;Total Nacional;05 Canarias;;Costa de Marfil;99
+Mujeres;Total Nacional;05 Canarias;;Egipto;9
+Mujeres;Total Nacional;05 Canarias;;Etiopía;5
+Mujeres;Total Nacional;05 Canarias;;Gambia;40
+Mujeres;Total Nacional;05 Canarias;;Ghana;125
+Mujeres;Total Nacional;05 Canarias;;Guinea;187
+Mujeres;Total Nacional;05 Canarias;;Guinea Ecuatorial;185
+Mujeres;Total Nacional;05 Canarias;;Guinea-Bissau;114
+Mujeres;Total Nacional;05 Canarias;;Kenia;22
+Mujeres;Total Nacional;05 Canarias;;Liberia;6
+Mujeres;Total Nacional;05 Canarias;;Mali;77
+Mujeres;Total Nacional;05 Canarias;;Marruecos;7.133
+Mujeres;Total Nacional;05 Canarias;;Mauritania;1.039
+Mujeres;Total Nacional;05 Canarias;;Nigeria;578
+Mujeres;Total Nacional;05 Canarias;;República Democrática del Congo;4
+Mujeres;Total Nacional;05 Canarias;;Senegal;1.169
+Mujeres;Total Nacional;05 Canarias;;Sierra Leona;53
+Mujeres;Total Nacional;05 Canarias;;Sudáfrica;35
+Mujeres;Total Nacional;05 Canarias;;Togo;8
+Mujeres;Total Nacional;05 Canarias;;Túnez;19
+Mujeres;Total Nacional;05 Canarias;;Resto de África;50
+Mujeres;Total Nacional;05 Canarias;;Costa Rica;34
+Mujeres;Total Nacional;05 Canarias;;Cuba;7.207
+Mujeres;Total Nacional;05 Canarias;;Dominica;8
+Mujeres;Total Nacional;05 Canarias;;El Salvador;51
+Mujeres;Total Nacional;05 Canarias;;Guatemala;115
+Mujeres;Total Nacional;05 Canarias;;Honduras;1.003
+Mujeres;Total Nacional;05 Canarias;;Nicaragua;111
+Mujeres;Total Nacional;05 Canarias;;Panamá;63
+Mujeres;Total Nacional;05 Canarias;;República Dominicana;759
+Mujeres;Total Nacional;05 Canarias;;Resto de América Central y Caribe;18
+Mujeres;Total Nacional;05 Canarias;;Canadá;113
+Mujeres;Total Nacional;05 Canarias;;Estados Unidos de América;575
+Mujeres;Total Nacional;05 Canarias;;México;394
+Mujeres;Total Nacional;05 Canarias;;Argentina;2.323
+Mujeres;Total Nacional;05 Canarias;;Bolivia;584
+Mujeres;Total Nacional;05 Canarias;;Brasil;1.429
+Mujeres;Total Nacional;05 Canarias;;Chile;663
+Mujeres;Total Nacional;05 Canarias;;Colombia;9.137
+Mujeres;Total Nacional;05 Canarias;;Ecuador;676
+Mujeres;Total Nacional;05 Canarias;;Paraguay;934
+Mujeres;Total Nacional;05 Canarias;;Perú;863
+Mujeres;Total Nacional;05 Canarias;;Uruguay;1.328
+Mujeres;Total Nacional;05 Canarias;;Venezuela;11.197
+Mujeres;Total Nacional;05 Canarias;;Resto de América del Sur;1
+Mujeres;Total Nacional;05 Canarias;;Arabia Saudí;3
+Mujeres;Total Nacional;05 Canarias;;Bangladesh;195
+Mujeres;Total Nacional;05 Canarias;;China;5.118
+Mujeres;Total Nacional;05 Canarias;;Corea;142
+Mujeres;Total Nacional;05 Canarias;;Filipinas;1.059
+Mujeres;Total Nacional;05 Canarias;;India;1.615
+Mujeres;Total Nacional;05 Canarias;;Indonesia;51
+Mujeres;Total Nacional;05 Canarias;;Irán;50
+Mujeres;Total Nacional;05 Canarias;;Iraq;6
+Mujeres;Total Nacional;05 Canarias;;Israel;34
+Mujeres;Total Nacional;05 Canarias;;Japón;101
+Mujeres;Total Nacional;05 Canarias;;Jordania;25
+Mujeres;Total Nacional;05 Canarias;;Kazajstán;91
+Mujeres;Total Nacional;05 Canarias;;Líbano;42
+Mujeres;Total Nacional;05 Canarias;;Nepal;145
+Mujeres;Total Nacional;05 Canarias;;Pakistán;200
+Mujeres;Total Nacional;05 Canarias;;Siria;22
+Mujeres;Total Nacional;05 Canarias;;Tailandia;172
+Mujeres;Total Nacional;05 Canarias;;Vietnam;33
+Mujeres;Total Nacional;05 Canarias;;Resto de Asia;128
+Mujeres;Total Nacional;05 Canarias;;Australia;43
+Mujeres;Total Nacional;05 Canarias;;Nueva Zelanda;8
+Mujeres;Total Nacional;05 Canarias;;Resto de Oceanía;2
+Mujeres;Total Nacional;05 Canarias;;Apátridas;19
