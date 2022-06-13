@@ -21,8 +21,8 @@ public class PDF {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        GenerarPdf pdf = new GenerarPdf();
-        pdf.addPagina();
+        addPdf pdf = new addPdf();
+        pdf.addPage();
         pdf.leerTxt("src/main/resources/temperaturas-abril.txt", "/aemet.png",
             "aemet", "/home/alumno/Escritorio/Prueba/prueba.pdf");
     }
@@ -30,7 +30,7 @@ public class PDF {
     /**
      * Clase que genera el PDF
      */
-    public static class GenerarPdf {
+    public static class addPdf {
         PDDocument document;
         PDPage page;
         PDPageContentStream contentStream;
@@ -40,7 +40,7 @@ public class PDF {
         /**
          * Constructor de la clase con 4 parametros
          */
-        public GenerarPdf() {
+        public addPdf() {
             this.document = new PDDocument();
             this.page = new PDPage(PDRectangle.A6);
             this.contentStream = null;
@@ -53,7 +53,7 @@ public class PDF {
          * @return retorna true si se ha podido agregar la pagina correctamente
          * @throws IOException Excepcion que se manda al main
          */
-        public boolean addPagina() throws Exception {
+        public boolean addPage() throws Exception {
             try {
                 document.addPage(page);
                 this.contentStream = new PDPageContentStream(document, page);
