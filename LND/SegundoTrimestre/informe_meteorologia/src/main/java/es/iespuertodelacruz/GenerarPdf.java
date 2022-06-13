@@ -11,7 +11,11 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 /**
- *  Clase para generar los pdf
+ * @author alfonsogj
+ */
+
+/**
+ * Clase que genera el PDF
  */
 public class GenerarPdf {
 
@@ -38,18 +42,14 @@ public class GenerarPdf {
      * @return retorna true si se ha podido agregar la pagina correctamente
      * @throws IOException Excepcion que se manda al main
      */
-    public boolean agregarPagina() throws Exception {
-
-
+    public boolean addPagina() throws Exception {
             try {
                 document.addPage(page);
                 this.contentStream = new PDPageContentStream(document, page);
                 return true;
             }catch (Exception e){
-
                 throw new Exception("No se ha podido agregar la pagina al documento" , e);
             }
-
     }
 
     /**
@@ -59,9 +59,7 @@ public class GenerarPdf {
      * @throws IOException Excepcion que se manda al main
      */
     public boolean agregarTitulo(String texto) throws Exception {
-
         try {
-
             contentStream.beginText();
             contentStream.setFont(PDType1Font.HELVETICA_BOLD, 13);
             contentStream.newLineAtOffset(80, page.getMediaBox().getHeight() - this.altura);
@@ -69,13 +67,11 @@ public class GenerarPdf {
             contentStream.endText();
             this.altura += 14;
             return true;
-
         }catch (Exception e){
-
             throw new Exception("No se ha podido agregar el titulo al documento", e);
-
         }
     }
+
 
     /**
      * Metodo para agregar texto al documento pdf
@@ -84,12 +80,8 @@ public class GenerarPdf {
      * @throws IOException Excepcion que se manda al main
      */
     public boolean agregarTexto(String texto) throws Exception {
-
-
-
         try {
             if (texto.length() > 150) {
-
                 String textoCortado1 = texto.substring(0, 65);
                 String textoCortado2 = texto.substring(65, texto.length());
                 contentStream.beginText();
@@ -98,35 +90,25 @@ public class GenerarPdf {
                 contentStream.showText(textoCortado1);
                 contentStream.endText();
                 this.altura += 12;
-
                 contentStream.beginText();
                 contentStream.setFont(PDType1Font.HELVETICA, 6);
                 contentStream.newLineAtOffset(5, page.getMediaBox().getHeight() - this.altura);
                 contentStream.showText(textoCortado2);
                 contentStream.endText();
                 this.altura += 12;
-
                 return true;
-
             } else {
-
                 contentStream.beginText();
                 contentStream.setFont(PDType1Font.HELVETICA, 6);
                 contentStream.newLineAtOffset(5, page.getMediaBox().getHeight() - this.altura);
                 contentStream.showText(texto);
                 contentStream.endText();
                 this.altura += 12;
-
                 return true;
-
             }
         }catch (Exception e){
-
             throw new Exception("Error al añadir texto al archivo", e);
         }
-
-
-
     }
 
     /**
@@ -137,9 +119,6 @@ public class GenerarPdf {
      * @return retorna true si todo ha salido bien
      */
     public boolean agregarImagen(String direccionImagen, String nombreImagen) throws Exception {
-
-
-
         try {
             this.image = PDImageXObject.createFromByteArray(document, App.class.getResourceAsStream(direccionImagen).readAllBytes(), nombreImagen);
             contentStream.drawImage(image, page.getMediaBox().getWidth() / 2 - (image.getWidth() / 3) / 2, page.getMediaBox().getHeight() - 4 - image.getHeight() / 3,
@@ -207,8 +186,8 @@ public class GenerarPdf {
      * @return retorna true si se ha leido el fichero correctamente
      * @throws Exception excepcion que surge si existe algun error al leer o guardar algun archivo
      */
-    public boolean leerFichero(String rutaArchivo, String rutaImagen, String nombreImagen,
-                            String rutaGuardar) throws Exception {
+    public boolean leerTxt(String rutaArchivo, String rutaImagen, String nombreImagen,
+                           String rutaGuardar) throws Exception {
 
         File archivo = null;
         FileReader fr = null;
