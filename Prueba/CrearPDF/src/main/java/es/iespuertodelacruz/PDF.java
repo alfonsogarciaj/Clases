@@ -28,12 +28,14 @@ public class PDF {
         System.out.println("Menú");
         System.out.println("-------");
         System.out.println("Opción 1: Utilizar la ruta default");
-        System.out.println("Opcion 2: Utilizar la ruta que ustede desee");
+        System.out.println("Opcion 2: Utilizar la ruta que ustede desee)");
         int opcion = sc.nextInt();sc.nextLine();
         switch (opcion){
             case 1:
+                System.out.println("Nombre que quiera dar al archivo(tiene que ser .pdf");
+                String nombreArchivo1 = sc.nextLine();
                 pdf.leerTxt("src/main/resources/prueba.txt", "/aemet.png",
-                    "aemet", "/home/daw/Escritorio/Alfonso/Clases/Prueba/prueba.pdf");
+                    "aemet", "/home/daw/Escritorio/Alfonso/Clases/Prueba/"+nombreArchivo1);
                 break;
             case 2:
                 System.out.println("Escriba la ruta del archivo txt");
@@ -42,9 +44,9 @@ public class PDF {
                 String rutaImagen = sc.nextLine();
                 System.out.println("Escriba el nombre de la imagen");
                 String nombreImagen = sc.nextLine();
-                System.out.println("Escriba la ruta donde desee guardar");
-                String rutaGuardar = sc.nextLine();
-                pdf.leerTxt(rutaArchivo, rutaImagen, nombreImagen, rutaGuardar);
+                System.out.println("Nombre que quiera dar al archivo(tiene que ser .pdf");
+                String nombreArchivo2 = sc.nextLine();
+                pdf.leerTxt(rutaArchivo, rutaImagen, nombreImagen,"/home/daw/Escritorio/Alfonso/Clases/Prueba/"+nombreArchivo2);
                 break;
             default:
                 System.out.println("Eliga una de las dos opciones");
