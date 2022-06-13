@@ -1,0 +1,5 @@
+BAE    ETS     FOL     LND     LNT      PRO   SSF
+6       7       8       4       10       2     0
+6       6       8       4       10       2     0
+6       7       8       4       9        2     0
+6       7       9       5       9        2     0

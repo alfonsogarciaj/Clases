@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * @author alfonsogj
@@ -21,10 +22,33 @@ public class PDF {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
         addPdf pdf = new addPdf();
         pdf.addPage();
-        pdf.leerTxt("src/main/resources/temperaturas-abril.txt", "/aemet.png",
-            "aemet", "/home/alumno/Escritorio/Prueba/prueba.pdf");
+        System.out.println("Menú");
+        System.out.println("-------");
+        System.out.println("Opción 1: Utilizar la ruta default");
+        System.out.println("Opcion 2: Utilizar la ruta que ustede desee");
+        int opcion = sc.nextInt();sc.nextLine();
+        switch (opcion){
+            case 1:
+                pdf.leerTxt("src/main/resources/prueba.txt", "/aemet.png",
+                    "aemet", "/home/daw/Escritorio/Alfonso/Clases/Prueba/prueba.pdf");
+                break;
+            case 2:
+                System.out.println("Escriba la ruta del archivo txt");
+                String rutaArchivo = sc.nextLine();
+                System.out.println("Escriba la ruta de la imagen");
+                String rutaImagen = sc.nextLine();
+                System.out.println("Escriba el nombre de la imagen");
+                String nombreImagen = sc.nextLine();
+                System.out.println("Escriba la ruta donde desee guardar");
+                String rutaGuardar = sc.nextLine();
+                pdf.leerTxt(rutaArchivo, rutaImagen, nombreImagen, rutaGuardar);
+                break;
+            default:
+                System.out.println("Eliga una de las dos opciones");
+        }
     }
 
     /**
@@ -206,7 +230,7 @@ public class PDF {
                 while ((linea = br.readLine()) != null) {
                     agregarTexto(linea);
                     String[] split = linea.split("\\s+");
-                    for (int i = 1; i < split.length; i++) {
+                    for (int i = 0; i < split.length; i++) {  //esto se aumenta si tiene una columna a la izquierda
                         datos[i] += Double.parseDouble(split[i]);
                     }
                     cantidadDatos += 1;
@@ -223,10 +247,11 @@ public class PDF {
                 }
             }
             try {
-                String medias = "Medias:" + "                     ";
-                for (int i = 1; i < datos.length; i++) {
+                String medias = "Medias:" + "          ";
+                for (int i = 0; i < datos.length; i++) {  // Aqui también añadimos si tiene una columna a la izquierda
+                    //si tiene una columna a la derecha .lenght -1
                     datos[i] /= cantidadDatos;
-                    medias += Math.round(datos[i]*100.0)/100.0 + "                ";
+                    medias += Math.round(datos[i]*100.0)/100.0 + "       ";
                 }
                 agregarTexto(medias);
                 closeContentStream();
