@@ -4,20 +4,23 @@ import java.util.Arrays;
 import java.util.List;
 
 public class EjercicioArrays {
+    static int[] control;
+    static int maxNota;
+    static int minNota;
+    static int indMaxNota, indMinNota;
+    static int postEval;
+    static int[] listaClase;
+    static int[] practicas;
+    static float[] calificaciones;
 
-    public static void main(String[] args) {
-        int numAlumnos = 40;
-        //vector con las notas generadas
-        Integer[] control = new Integer[numAlumnos];
-        int maxNota = 0;
-        int minNota = 0;
-        int indMaxNota, indMinNota;
-        int postEval;
-        //Genera notas random entre 1 y 10
+    public static int[] generarRandom(){
         for(int i=0; i < control.length; i++){
             control[i] = (int)(Math.random()*11);
         }
-        //buscamos al mayor
+        return control;
+    }
+
+    public static void buscarMenor(){
         postEval = 11;
         for(int i=0; i<control.length; i++){
             int preEval = control[i];
@@ -26,7 +29,9 @@ public class EjercicioArrays {
                 postEval = control[i];
             }
         }
-        //buscamos al menor
+    }
+
+    public static void buscarMayor(){
         postEval = 0;
         for(int i=0; i<control.length; i++){
             int preEval = control[i];
@@ -35,11 +40,44 @@ public class EjercicioArrays {
                 postEval = control[i];
             }
         }
-        //creamos una lista de los alumnos de la clase
-        int[] listaClase = new int[numAlumnos];
+    }
+
+    public static int[] listaClase(int numAlumnos){
         for (int i = 0; i < numAlumnos; i++){
             listaClase[i] = i+1;
         }
+        return listaClase;
+    }
+
+    public static int[] practicas(int numAlumnos){
+        for(int i=0; i < practicas.length; i++){
+            practicas[i] = (int)(Math.random()*11);
+        }
+        return practicas;
+    }
+
+    public static float[] calificaciones(int[] control, int[] practicas){
+        for(int i = 0; i<control.length; i++){
+            calificaciones[i] = 
+                    (((float) control[i] 
+                    + (float) practicas[i]) 
+                    / 2);
+        }
+        return calificaciones;
+    }
+
+    public static void main(String[] args) {
+        int numAlumnos = 40;
+        control = new int[numAlumnos];
+        //Genera notas random entre 1 y 10
+        control = generarRandom();
+        //buscamos al menor
+        buscarMenor();
+        //buscamos al mayor
+        buscarMayor();
+        //creamos una lista de los alumnos de la clase
+        listaClase = new int[numAlumnos];
+        listaClase = listaClase(numAlumnos);
         //Empezamos el uso de listas para facilitar la tarea de índices.
         List notas = Arrays.asList(control);
         indMinNota = notas.indexOf(minNota) + 1;
@@ -54,18 +92,12 @@ public class EjercicioArrays {
         System.out.println("Array de Notas :" + notas);
         
         //creamos el array de notas "practicas"
-        int[] practicas = new int[numAlumnos];
-        for(int i=0; i < practicas.length; i++){
-            practicas[i] = (int)(Math.random()*11);
-        }
+        practicas = new int[numAlumnos];
+        practicas = practicas(numAlumnos);
+
         //Creamos el vector calificaciones
-        float[] calificaciones = new float[numAlumnos];
-        for(int i = 0; i<control.length; i++){
-            calificaciones[i] = 
-                    (((float) control[i] 
-                    + (float) practicas[i]) 
-                    / 2);
-        }
+        calificaciones = new float[numAlumnos];
+        calificaciones(control, practicas);
         System.out.println("Prácticas      :" + Arrays.toString(practicas));
         System.out.println("Calificaciones :" + Arrays.toString(calificaciones));
         

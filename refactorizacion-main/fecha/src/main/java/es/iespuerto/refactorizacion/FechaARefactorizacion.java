@@ -12,12 +12,27 @@ public class FechaARefactorizacion {
         this.anio = anio;
     }
 
-    public boolean valida () {
-        if (dia < 1 || dia > 31)
+    public boolean comprobar(){
+        if (dia < 1 || dia > 31){
             return false;
-        if (mes < 1 || mes > 12)
+        }
+        if (mes < 1 || mes > 12){
             return false;
-// determinamos la cantidad de días del mes:
+        }
+        return true;
+    }
+
+    public int bisiesto(){
+        int diasMes;
+        if ( (anio % 400 == 0) ||
+        ( (anio % 4 == 0) && (anio % 100 != 0) ) ){
+            diasMes = 29;
+        }else diasMes = 28;
+
+        return diasMes;
+    }
+
+    public int comprobarMes(){
         int diasMes = 0;
         switch (mes) {
             case 1:
@@ -32,12 +47,20 @@ public class FechaARefactorizacion {
             case 9:
             case 11 : diasMes = 30; break;
             case 2 : // verificación de año bisiesto
-                if ( (anio % 400 == 0) ||
-                        ( (anio % 4 == 0) && (anio % 100 != 0) ) )
-                    diasMes = 29;
-                else diasMes = 28;
+                diasMes = bisiesto();
                 break;
         }
+        return diasMes;
+    }
+
+    public boolean valida () {
+
+        if (!comprobar()){
+            return false;
+        }
+
+        int diasMes = comprobarMes();
+
         if (dia > diasMes)
             return false;
         else return true;

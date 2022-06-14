@@ -1,33 +1,59 @@
 package es.iespuerto.refactorizacion;
 
 public class Numero {
-    private static int dimension;
-    private static boolean esPrimo[];
-    private static int primos[];
+    private int dim;
+    private boolean esPrimo[];
+    private int primos[];
 
-    public static int[] primos(int max) {
-        int i = 0, j = 0;
+
+    public void allTrue(){
+        for (int i=0; i<dim; i++){
+            esPrimo[i] = true;
+        }
+    }
+
+    public void comprobar(){
+        for (int i=2; i<Math.sqrt(dim)+1; i++) {
+            if (esPrimo[i]) {
+                for (int j=2*i; j<dim; j+=i)
+                    esPrimo[j] = false;
+            }
+        }
+    }
+
+    public int cuenta(){
+        int cuenta = 0;
+        for (int i=0; i<dim; i++) { 
+            if (esPrimo[i]) 
+            cuenta++;
+        }
+        return cuenta;
+    }
+
+    public void contador(){
+        for (int i=0, j=0; i<dim; i++) { 
+            if (esPrimo[i])
+            primos[j++] = i;
+        }
+    }
+
+    public int[] primos(int max) {
         if (max >= 2) {
-            int dim = max + 1;
-            boolean[] esPrimo = new boolean[dim];
-            for (i=0; i<dim; i++)
-                esPrimo[i] = true;
+            dim = max + 1;
+            esPrimo = new boolean[dim];
+            
+            allTrue();
 
             esPrimo[0] = esPrimo[1] = false;
 
-            for (i=2; i<Math.sqrt(dim)+1; i++) {
-                if (esPrimo[i]) {
-                    for (j=2*i; j<dim; j+=i)
-                        esPrimo[j] = false;
-                }
-            }
-            int cuenta = 0;
-            for (i=0; i<dim; i++) { if (esPrimo[i]) cuenta++;
-            }
-            int[] primos = new int[cuenta];
-            for (i=0, j=0; i<dim; i++) { if (esPrimo[i])
-                primos[j++] = i;
-            }
+            comprobar();
+
+            int cuenta = cuenta();
+
+            primos = new int[cuenta];
+
+            contador();
+
             return primos;
         } else {
             return new int[0];
