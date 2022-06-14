@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla</title>
+    <style>
+        td{
+            background-color: rgb(250, 249, 249);
+        }
+        main{
+            display: block;
+            padding: 1rem;
+            margin: auto;
+            min-width: auto;
+            max-width: 200px;
+            background: rgb(206, 205, 205);
+        }
+        main h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h3>Tabla multiplicar</h3>
+        <label for="numtabla">Número: </label><br>
+        <input type="number" name="inputnumtabla" id="inputnumtabla" size="5"  onkeyup="launchenterkey(event)"/>
+        <button id="btncalcular" onclick="calcular()">Calcular</button>
+        <div class="resultado">
+            <table id="tablaresultado"  style="width:200px;margin-top:20px;visibility: hidden; background: rgb(219, 218, 218);">
+                <caption>Tabla del: <span id="spannumresultado"></span></caption>
+
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
