@@ -1,5 +1,3 @@
-<img src="https://user-images.githubusercontent.com/91060831/136633965-7280c0c8-a144-4d55-838e-1ace7794c691.png" width="190" height="80"/>
-
 *Alfonso García Jorge* 
 
 # Cosas de clases
