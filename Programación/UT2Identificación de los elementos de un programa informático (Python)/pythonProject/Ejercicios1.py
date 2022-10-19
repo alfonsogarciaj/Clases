@@ -1,9 +1,11 @@
 a = 4
 b = 7
 
-aBotellasPrecioTotal = a * 100.23
-bBotellasPrecioTotal = b * 60.25
+aBotellasPrecio = 100.23
+bBotellasPrecio = 60.25
+aBotellasPrecioTotal = a * aBotellasPrecio
+bBotellasPrecioTotal = b * bBotellasPrecio
 botellasPrecioTotal = aBotellasPrecioTotal + bBotellasPrecioTotal
-mediaPrecioBotella = botellasPrecioTotal / a + b
-print(botellasPrecioTotal)
-print(mediaPrecioBotella)
+mediaPrecioBotella = round(botellasPrecioTotal / (a + b),2)
+
+print(f"El promedio por botella es de: {mediaPrecioBotella}")
