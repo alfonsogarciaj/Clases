@@ -1,14 +1,14 @@
-clase = {}
-notasAlumno = []
-for i in range(3):
-    clave = input("Introduce el nombre del alumno: ")
-    contador = int(input("¿Cuantas notas son? "))
-    while contador > 0:
-        valor = int(input("Introduce la nota: "))
-        if valor >= 0 and valor <= 10:
-            notasAlumno.append(valor)
-            contador -= 1
-            clase[clave] = notasAlumno
-        else:
-            print("Tiene que ser entre 0 y 10")
-print(clase)
+listaAlumnos = []
+alumnos = int(input("¿Cuantos alumnos son? "))
+for i in range(alumnos):
+    nombre = str(input("Dame un nombre: "))
+    nota = int(input("Dame una nota: "))
+    listaAlumnos.append([nombre,nota])
+opcion = int(input("Desea borrar un alumno? (1-Si / 0-No) "))
+if opcion == 1:
+    nombre = str(input("Nombre del alumno que desea borrar: "))
+    nota = int(input("Nota que tenia el alumno: "))
+    listaAlumnos.remove([nombre,nota])
+    print(listaAlumnos)
+print("La lista es: ", listaAlumnos)
+
