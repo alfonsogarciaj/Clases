@@ -3,28 +3,38 @@ import java.util.Scanner;
 public class Ejercicios {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int [] vector1 = new int [5];
-        int [] vector2 = new int [5];
-        int [] vector3 = new int [5];
-        System.out.println("Primer Vector");
-        for(int i = 0; i < 5; i++){
-            System.out.println("Ingrese un valor para el primer vector: ");
-            int num = sc.nextInt();sc.nextLine();
-            vector1[i] = num;
+        int[] temperatura = new int[6];
+        int[] dias = new int[6];
+        int cantDias = 0;
+        int i = 0;
+        int suma = 0;
+        int tempMax  = temperatura[0];
+        int tempMin= temperatura[0];
+        do {
+            System.out.println("Diga un dia: ");
+            int dia = sc.nextInt();
+            sc.nextLine();
+            dias[i] = dia;
+            System.out.println("Diga una temperatura: ");
+            int tiempo = sc.nextInt();
+            sc.nextLine();
+            temperatura[i] = tiempo;
+            i++;
+            cantDias++;
+        }while (cantDias<5);
+        for (i = 0; i < cantDias; i++) {
+            suma = suma + dias[i];
+            if(temperatura[i]>tempMax){
+                tempMax = temperatura[i];
+            }
+            if (temperatura[i]<tempMin){
+                tempMin = temperatura[i];
+            }
+            System.out.println("El dia " + dias[i] + " con " + temperatura[i] + " grados.");
         }
-        System.out.println("Segundo Vector");
-        for(int i = 0; i < 5; i++){
-            System.out.println("Ingrese un valor para el segundo vector: ");
-            int num = sc.nextInt();sc.nextLine();
-            vector2[i] = num;
-        }
-        for(int i = 0; i < 5; i++){
-            vector3[i] = vector1[i] + vector2[i];
-        }
-        System.out.println("El tercer vector de la suma del 1 y del es de:");
-        for (int i = 0; i < vector3.length; i++) {
-            System.out.println(vector3[i]);
-        }
-
+        int media = suma / temperatura.length;
+        System.out.println("La media de temperatura es: " + media);
+        System.out.println("La temperatura mas alta es: " + tempMax);
+        System.out.println("La temperatura mas baja es: " + tempMin);
     }
 }
