@@ -3,38 +3,22 @@ import java.util.Scanner;
 public class Ejercicios {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] temperatura = new int[6];
-        int[] dias = new int[6];
-        int cantDias = 0;
-        int i = 0;
+        int array[] = new int[10];
         int suma = 0;
-        int tempMax  = temperatura[0];
-        int tempMin= temperatura[0];
-        do {
-            System.out.println("Diga un dia: ");
-            int dia = sc.nextInt();
-            sc.nextLine();
-            dias[i] = dia;
-            System.out.println("Diga una temperatura: ");
-            int tiempo = sc.nextInt();
-            sc.nextLine();
-            temperatura[i] = tiempo;
-            i++;
-            cantDias++;
-        }while (cantDias<5);
-        for (i = 0; i < cantDias; i++) {
-            suma = suma + dias[i];
-            if(temperatura[i]>tempMax){
-                tempMax = temperatura[i];
-            }
-            if (temperatura[i]<tempMin){
-                tempMin = temperatura[i];
-            }
-            System.out.println("El dia " + dias[i] + " con " + temperatura[i] + " grados.");
+        int resta = 0;
+        System.out.printf("Introduce 10 numeros: ");
+        for (int i = 0; i < array.length; i++) {
+            int numero = sc.nextInt();
+            array[i] = numero;
         }
-        int media = suma / temperatura.length;
-        System.out.println("La media de temperatura es: " + media);
-        System.out.println("La temperatura mas alta es: " + tempMax);
-        System.out.println("La temperatura mas baja es: " + tempMin);
+        for (int i = 0; i < array.length; i++) {
+            suma += array[i];
+            resta -= array[i];
+        }
+        double sumatorio = suma;
+        double media = sumatorio/10;
+        System.out.println("La suma del array es: " + suma);
+        System.out.println("La resta del array es: " + resta);
+        System.out.println("La media del array es: " + media);
     }
 }
