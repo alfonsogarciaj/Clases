@@ -1,3 +1,0 @@
-Nombre: Ian
-Edad: 30
-Ciudad de nacimiento: Barcelona
