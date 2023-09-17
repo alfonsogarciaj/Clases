@@ -1,13 +1,10 @@
-.first_block.tricky_content_makes_conflict_or_not{
-    display:none;
-  }
-
 h1{
-    color: blue;
+    color: cadetblue;
     font-size: 80px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
+
 
 #descripcion{
     text-decoration: underline;
@@ -17,25 +14,31 @@ h1{
 }
 
 #first_block{
-    font-family: monospace;
-    width: 100%;
-    border-style: solid;
-    border-color:black;
-    border-width: 1px;
-    margin-bottom: 10px;
-    }
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    display: block;
+    float: right;
+    overflow: hidden;
+}
 
 #second_block{
-    font-family: monospace;
-    width: 50%;
-    background-color: red;
-    font-weight: bolder;
-    margin-bottom: 1em;
+    width: 100px;
+    height: 50px;
+    background-color:blue;
+    display: block;
+    float: left;
+    overflow: scroll;
+}
+
+#container{
+    background-color: brown;
 }
 
 .third_block{
-    font-family: monospace;
-    color: blue;
-    width: 50%; 
-    padding: 1rem;
+    width: 50%;
+    background-color: gray;
+}
+
+.fourth_block{
 }
