@@ -17,6 +17,17 @@
      {"id":2,"name":"GONZALO MULET FIGUERAS","department":"IT"},
      {"id":3,"name":"FRANCISCO JOSE GRAÑA BARBERA","department":"IT"},
      {"id":4,"name":"IRENE POMBO JORDA","department":"HR"}]
+     
+    document.write("<table  class='table' id='tabla''>");
+    document.write("<tr><th>ID</th><th>Name</th><th>Department</th></tr>");
+    employees.forEach(function(employee){
+        document.write("<tr>");
+        document.write("<td>" + employee.id + "</td>");
+        document.write("<td>" + employee.name + "</td>");
+        document.write("<td>" + employee.department + "</td>");
+        document.write("</tr>");
+    });
+    document.write("</table>");
     </script>
   </body>
 </html>
