@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script>
+      const apikey = "2335a10b7586b3e3a0fd07bf6259ac5a";
+      const apiUrl =
+        "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    </script>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button><img src="images/lupa.png" width="90px" /></button>
+      </div>
+      <div class="weather">
+        <img src="images/sol.png" class="weather-icon" />
+        <h1 class="temp">20c</h1>
+        <h2 class="city">Las Palmas de Gran Canaria</h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humedad.png" />
+          </div>
+          <p class="humidity">50%</p>
+          <p>Humedad</p>
+          <div class="col viento">
+            <img src="images/velovient.png" />
+          </div>
+          <p class="wind">120 km/h</p>
+          <p>Velocidad del viento</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
