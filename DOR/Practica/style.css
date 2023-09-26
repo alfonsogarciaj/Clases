@@ -67,13 +67,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin-right: 50px;
+
 
 }
 
-.col{
-    font-size: 15px;
+.col-viento{
+    font-size: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,22 +80,14 @@ body{
 
 }
 
-.col img{
-    width: 40px;
-    margin-right: 10px;
-    justify-content: space-evenly;
-
-}
 
 .humidity{
     font-size: 15px;
-    margin-left: 8px;
-    text-align: left;
 
 }
 
 .wind{
     font-size: 15px;
-    margin-left: 8px;
-    text-align: right;
+
+
 }
