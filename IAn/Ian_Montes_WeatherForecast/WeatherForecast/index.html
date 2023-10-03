@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c0276c4eae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span id="city-header"></span>
+        <div class="search-container">
+          <i id="search-btn" class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a city.."
+          />
+        </div>
+      </header>
+      <section id="forecast-container"></section>
+      <section id="bottom-container">
+        <div id="map">
+          <span id="location-dot"></span>
+        </div>
+        <div id="rain-card">
+          <span>Chance of rain</span>
+
+          <div id="rain-graph">
+            <div>
+              <span>25%</span>
+              <div></div>
+            </div>
+            <div>
+              <span>50%</span>
+              <div></div>
+            </div>
+            <div>
+              <span>75%</span>
+              <div></div>
+            </div>
+          </div>
+          <article></article>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
