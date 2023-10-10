@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Activity 3: Forms &amp; click event</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"
+    />
+    <style>
+      input {
+        text-align: center;
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Activity 3: Forms &amp; click event</h1>
+    <p>
+      Add a form with two fields ("Rows" and "Columns") and a button ("Generate
+      Table"). When the button is clicked it have to:
+    </p>
+    <ol>
+      <li>remove a table#generated if exists</li>
+      <li>
+        Add a table with as many rows and columns both Rows and Columns fields
+        indicate
+      </li>
+      <li>Each table cell must contain a text like: "Row: X, Col: Y"</li>
+    </ol>
+    <input type="number" id="fila" placeholder="Fila" />
+    <input type="number" id="columna" placeholder="Columna" />
+    <button onclick="tabla()">Resultado</button>
+    <br />
+    <p id="resultado"></p>
+    <script src="tabla.js"></script>
+  </body>
+</html>
