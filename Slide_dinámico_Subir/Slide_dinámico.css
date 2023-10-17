@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, violet, black);
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+
+  width: 10px;
+  height: 10px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.slider span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+}
+
+.slider span img {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 300px; /* puedes ajustar este valor según tus necesidades */
+  height: 300px; /* puedes ajustar este valor según tus necesidades */
+  border-radius: 2%; /* para hacer la imagen circular */
+  object-fit: cover;
+  transition: 2s;
+}
+
+.slider span:hover img {
+  transform: translateY(-5px) scale(1.2);
+}
