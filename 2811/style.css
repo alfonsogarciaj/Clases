@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #334d50, #cbcaa5);
+  transition: 0.3s all ease-in-out;
+}
+
+.card {
+  height: 50vh;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxesContainer {
+  display: flex;
+  height: fit-content;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin-top: 2rem;
+}
+
+.back,
+.front {
+  transition: 0.3s all ease-in-out;
+  position: absolute;
+  width: calc(100% - 1rem);
+  height: calc((100% - 1rem));
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.back {
+  background-color: cadetblue;
+  transform: rotateY(180deg);
+}
+
+.front {
+  background-color: paleturquoise;
+  transform: rotateY(0);
+}
+
+.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.flipped .back {
+  transform: rotateY(0);
+}
+
+button {
+  padding: 1rem 2rem;
+  width: max-content;
+  background-color: cadetblue;
+  border: 0;
+  border-radius: 0.75rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cardTop {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+a {
+  padding: 1rem 2rem;
+  background-color: palegoldenrod;
+  border-radius: 1rem;
+  height: max-content;
+  width: max-content;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.cardButtonsFront,
+.cardButtonsBack {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.cardContent p {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.cardContent h3 {
+  position: absolute;
+  top: 1rem;
+}
